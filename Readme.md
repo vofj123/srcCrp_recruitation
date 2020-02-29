@@ -15,7 +15,7 @@
 * Run git command 
  
 ```
- git clone 
+ git clone https://github.com/vofj123/srcCrp_recruitation.git
 ```
 
 ### Running
@@ -31,5 +31,9 @@
 ```sh
 $ mvn clean test 
 ```
+
+### Results
+
+* Results are saved as html file and can be view in `test_output` directory inside project
 
 >> @ Damian Łęgowski

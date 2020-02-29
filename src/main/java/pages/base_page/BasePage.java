@@ -5,6 +5,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public abstract class BasePage {
 
     protected WebDriver driver;
@@ -81,6 +83,14 @@ public abstract class BasePage {
             }
         }
         return false;
+    }
+
+    protected WebElement getElementContainsText(String text) {
+        return driver.findElement(By.xpath("//*[contains(text(),'" + text + "')]"));
+    }
+
+    protected List<WebElement> waitForVisibilityOfAll(List<WebElement> elementsList) {
+        return wait.until(ExpectedConditions.visibilityOfAllElements(elementsList));
     }
 
     private boolean isTimeout(long startTime, long desiredTimeoutInSeconds) {
