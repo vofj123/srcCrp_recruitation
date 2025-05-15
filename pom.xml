@@ -12,7 +12,7 @@
     <properties>
         <cucumber.version>4.2.0</cucumber.version>
         <selenium.version>3.141.59</selenium.version>
-        <webdriver.manager.version>3.7.1</webdriver.manager.version>
+        <webdriver.manager.version>6.1.0</webdriver.manager.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
